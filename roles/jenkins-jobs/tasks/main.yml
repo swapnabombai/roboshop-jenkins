@@ -1,5 +1,5 @@
 - name: setup templates
-  ansible.builtin.templates:
+  ansible.builtin.template:
 
 
     src: pipeline.xml

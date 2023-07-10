@@ -4,5 +4,9 @@
   vars:
     jobs:
       - cart
+      - catalogue
+      - user
+      - shipping
+      - payment
   roles:
     - jenkins-jobs

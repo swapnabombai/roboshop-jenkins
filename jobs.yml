@@ -3,6 +3,6 @@
   connection: local
   vars:
     jobs:
-      - learn-terraform
+      - cart
   roles:
     - jenkins-jobs

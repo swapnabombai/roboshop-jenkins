@@ -1,5 +1,8 @@
 - name: create jenkins jobs
   hosts: localhost
   connection: local
+  vars:
+    jobs:
+      - learn-ansible
   roles:
     - jenkins-jobs

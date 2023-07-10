@@ -4,7 +4,7 @@
 
     src: pipeline.xml
     dest: /tmp/pipeline.xml
-  loop: ""{ { item } }""
+  loop: ""{{ item }}""
 
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:

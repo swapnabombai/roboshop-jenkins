@@ -2,13 +2,13 @@
   ansible.builtin.template:
 
 
-    src: pipeline.xml
+    src: mbranch.xml
     dest: /tmp/mbranch.xml
 
 
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
-    config: "{{ lookup( 'file', '/tmp/pipeline.xml' ) }}"
+    config: "{{ lookup('file', '/tmp/mbranch.xml') }}"
     name: "{{item}}"
     password: bhagya2416
     url: http://172.31.81.154:8080

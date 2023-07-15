@@ -18,7 +18,7 @@
     </orphanedItemStrategy>
     <triggers>
         <com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger plugin="multibranch-scan-webhook-trigger@1.0.9">
-            <spec> </spec>
+            <spec></spec>
             <token>{{item}}</token>
         </com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger>
     </triggers>

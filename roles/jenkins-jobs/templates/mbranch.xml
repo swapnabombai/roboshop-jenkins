@@ -27,7 +27,7 @@
         <data>
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.1.0">
-                    <id>006f89b5-8d88-4807-84be-199f68dafd59</id>
+                    <id>b7a68321-899f-47d7-a9ed-61a951ecb079</id>
                     <remote>https://github.com/swapnabombai/{{item}}</remote>
                     <credentialsId> </credentialsId>
                     <traits>

@@ -1,5 +1,5 @@
 def call() {
-    node ('workstation') {
+    node ('practice') {
 
          if (env.cibuild== "java") {
              stage('build') {
@@ -12,6 +12,7 @@ def call() {
             stage('unit tests') {
 
                     echo 'unit tests'
+
                     // sh 'npm test'
 
             }

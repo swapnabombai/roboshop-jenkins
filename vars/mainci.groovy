@@ -1,7 +1,7 @@
 def call() {
     node ('practice') {
 
-         if (env.cibuild== "java") {
+         if (env.cibuild == "java") {
              stage('build') {
 
                      sh 'mvn package'
@@ -12,7 +12,7 @@ def call() {
             stage('unit tests') {
 
                     echo 'unit tests'
-                sh 'ls -ltr'
+
 
                     // sh 'npm test'
 
@@ -32,12 +32,12 @@ def call() {
             }
 
 
-               stage('Publish a Artifact') {
+            stage('Publish a Artifact') {
 
                    echo 'Publish a Artifact'
 
-               }
+            }
 
 
-        }
     }
+}

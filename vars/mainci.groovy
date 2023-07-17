@@ -12,6 +12,7 @@ def call() {
             stage('unit tests') {
 
                     echo 'unit tests'
+                sh 'ls -ltr'
 
                     // sh 'npm test'
 

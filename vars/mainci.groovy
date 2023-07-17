@@ -3,40 +3,31 @@ def call() {
 
          if (env.cibuild == "java") {
              stage('build') {
-
-                     sh 'mvn package'
-
+                 sh 'mvn package'
              }
          }
 
-            stage('unit tests') {
+         stage('unit tests') {
+             echo 'unit tests'
+             // sh 'npm test'
+         }
 
-                    echo 'unit tests'
-
-
-                    // sh 'npm test'
-
-            }
-
-            stage('code analysis') {
-
-                    echo 'sonar'
+         stage('code analysis') {
+             echo 'sonar'
                     //sh 'sonar-scanner -Dsonar.host.url=http://172.31.80.223:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectKey=frontend -Dsonar.qualitygate.wait=true'
 
-            }
+         }
 
-            stage('Security Scans') {
+         stage('Security Scans') {
+             echo 'Security Scans'
 
-                    echo 'Security Scans'
-
-            }
+         }
 
 
-            stage('Publish a Artifact') {
+         stage('Publish a Artifact') {
+             echo 'Publish a Artifact'
 
-                   echo 'Publish a Artifact'
-
-            }
+         }
 
 
     }

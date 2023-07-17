@@ -29,10 +29,13 @@ def call() {
 
             }
 
-            stage('Publish a Artifact') {
+           if (env.TAG_NAME ==~ ".*"){
+               stage('Publish a Artifact') {
 
-                    echo 'Publish a Artifact'
+                   echo 'Publish a Artifact'
 
-            }
+               }
+           }
+
         }
     }
